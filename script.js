@@ -1,3 +1,4 @@
+
 function register() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
@@ -12,7 +13,6 @@ function register() {
         message.innerHTML = "Please fill all fields!";
         message.style.color = "red";
     }
-
     else if (password.length < 6) {
         message.innerHTML = "Password must be at least 6 characters!";
         message.style.color = "red";
@@ -27,7 +27,7 @@ function register() {
     }
 }
 
-document.getElementById("myForm").onsubmit = function (event) {
+document.getElementById("myForm").onsubmit = function(event) {
     event.preventDefault();
     register();
 };
